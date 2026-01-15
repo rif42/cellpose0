@@ -1,0 +1,53 @@
+================================================================================
+CELLPOSE BATCH PROCESSING REPORT
+================================================================================
+
+PROCESSING PARAMETERS:
+--------------------------------------------------------------------------------
+Model: cpsam
+Cell Diameter: 50
+Flow Threshold: 2
+Cell Probability Threshold: -0.5
+Input Directory: e:\work\cellpose-stemcell\dataset\train
+Output Directory: e:\work\cellpose-stemcell\dataset\train
+Processing Date: 2026-01-15 12:00:17
+Total Processing Time: 471.20 seconds
+
+PROCESSING RESULTS:
+--------------------------------------------------------------------------------
+Filename                       ROI Count       Status                             
+--------------------------------------------------------------------------------
+10_-1.JPG                      144             Success                            
+10_-2.JPG                      177             Success                            
+10_-3.JPG                      58              Success                            
+10_-4.JPG                      64              Success                            
+10_-5.JPG                      63              Success                            
+20_-2.JPG                      252             Success                            
+40_-1.JPG                      560             Success                            
+40_-2.JPG                      899             Success                            
+40_-3.JPG                      612             Success                            
+50_-1.JPG                      803             Success                            
+50_-10.JPG                     893             Success                            
+50_-11.JPG                     898             Success                            
+50_-12.JPG                     1030            Success                            
+50_-13.JPG                     1132            Success                            
+50_-16.JPG                     584             Success                            
+50_-17.JPG                     602             Success                            
+50_-18.JPG                     522             Success                            
+50_-2.JPG                      774             Success                            
+50_-3.JPG                      839             Success                            
+50_-4.JPG                      738             Success                            
+50_-6.JPG                      693             Success                            
+50_-7.JPG                      844             Success                            
+50_-8.JPG                      934             Success                            
+50_-9.JPG                      1018            Success                            
+
+================================================================================
+SUMMARY STATISTICS:
+--------------------------------------------------------------------------------
+Total Images Processed: 24
+Successfully Processed: 24
+Failed: 0
+Total ROIs Detected: 15133
+Average ROIs per Image: 630.54
+================================================================================
