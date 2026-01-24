@@ -1,16 +1,25 @@
 # 1. Install Python and Git using Windows Package Manager
-winget install -e --id Python.Python.3.10
-winget install -e --id Git.Git
+winget install -e --id Python.Python.3.11 --scope machine --source winget
+winget install -e --id Git.Git --source winget
 
 # Refresh Path
 $env:Path = [System.Environment]::GetEnvironmentVariable("Path","Machine") + ";" + [System.Environment]::GetEnvironmentVariable("Path","User")
 
-# 3. Create and access virtual environment
-.\cellpose\Scripts\Activate.ps1
+cd cellpose
 
-# 4. Install dependencies and cellpose
+# 3. Create virtual environment
+python -m venv .
+
+# 4. Activate virtual environment
+.\Scripts\Activate.ps1
+
+# 5. Install dependencies and cellpose
 pip install --upgrade pip
-pip install "cellpose[gui]"
+pip install "cellpose"
 
 # 5. Execute
 python -m cellpose
+
+# Wait for key press before exiting
+
+Read-Host -Prompt "Press Enter to exit"
